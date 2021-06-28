@@ -1,25 +1,31 @@
 import React from 'react';
-import './Client.css';
+
 import erlogo from '../images/1logo.png';
 import deuxlogo from '../images/2logo.png';
 import troislogo from '../images/3logo.png';
 import quatrelogo from '../images/4logo.png';
 import cinqlogo from '../images/5logo.png';
+import './Client.css';
+import Search from './Search';
 
 function Client() {
   return (
     <div className='layout-service .discover-fiverr'>
-      <div></div>
-      <p>
-        Bienvenue sur Fiverr ! Souhaitez-vous découvrir Fiverr en français ?
-      </p>
-      <span className='discover-link'>C'est parti !</span>
+      <div className='intro'>
+        <p>
+          Bienvenue sur Fiverr ! Souhaitez-vous découvrir Fiverr en français ?
+        </p>
+        <span className='discover-link'>C'est parti !</span>
+      </div>
       <header>
         <div className='logo'>
           <i className='bx bxs-drink' />
           <a href='/'>
             fiverr<span className='dot'>.</span>
           </a>
+        </div>
+        <div className='search'>
+          <Search />
         </div>
         <div className='links'>
           <ul>
