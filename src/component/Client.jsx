@@ -48,6 +48,7 @@ function Client() {
           <li>Business</li>
           <li>Loisir</li>
         </div>
+        <hr></hr>
         <div className='title2'>
           <h1>Popular professional services</h1>
         </div>
