@@ -3,7 +3,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 24px 48px;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .logo a {
   font-size: 32px;
@@ -21,4 +23,62 @@ header {
 li {
   margin-right: 16px;
   color: rgb(156, 143, 143);
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container-search {
+  margin-top: 2rem;
+}
+
+.container-search h2 {
+  font-size: 2rem;
+}
+
+.content-search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-chance {
+  border: 3px solid crimson;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: black;
+  font-size: 1.2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.btn-chance:hover {
+  border: 3px solid #f7f5fb;
+  background-color: crimson;
+  color: #f7f5fb;
+  transition: all 0.5s ease;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0;
+}
+.filter-cat,
+.filter-btn {
+  display: flex;
+  align-items: center;
+}
+
+.filter-cat p {
+  margin-right: 16px;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 4px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+.filter-btn p {
+  margin-right: 16px;
 }

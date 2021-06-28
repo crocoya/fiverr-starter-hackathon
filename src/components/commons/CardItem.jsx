@@ -14,7 +14,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
-              <span></span>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -23,6 +37,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -31,6 +60,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -39,6 +83,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -47,6 +106,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -55,6 +129,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -63,6 +152,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
           <div className='nav-item'>
@@ -71,6 +175,21 @@ export default function CardItem() {
               <p>
                 I will build modern wordpress website and ecommerce online store
               </p>
+              <div className='content-note'>
+                <span>
+                  <i className='bx bxs-star' />
+                  &nbsp;5.0
+                </span>
+                &nbsp; (617)
+              </div>
+              <div className='content-price'>
+                <span>
+                  <i className='bx bxs-heart' />
+                </span>
+                <span>
+                  <em>STARTING AT $170.00</em>
+                </span>
+              </div>
             </div>
           </div>
         </div>
