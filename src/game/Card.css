@@ -1,0 +1,81 @@
+.card {
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s ease-in-out;
+  backface-visibility: hidden;
+  transform: perspective(500px) rotateY(0);
+  font-size: 48px;
+  border: #1dbf73 8px solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.cardBackLogo {
+  width: 90%;
+  transform: rotate(-20deg);
+}
+
+.back {
+  border-radius: 5px;
+}
+
+.back.turned {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.front.turned {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.toMove {
+  transform: translateX(100vw);
+  transition: translate 1s ease-in-out;
+}
+
+.moved {
+  transform: translateX(0);
+  transition: translate 1s ease-in-out;
+}
+
+.turnedFix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transform: perspective(500px) rotateY(0);
+  font-size: 48px;
+  border: #1dbf73 8px solid;
+  border-radius: 5px;
+  background-color: white;
+}
