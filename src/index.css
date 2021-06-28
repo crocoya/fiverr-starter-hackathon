@@ -1,0 +1,60 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --nav-width: 324px;
+
+  /*===== FONT WEIGHT =====*/
+  --font-light: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /*===== COLORS =====*/
+  --first-color: #31acbd;
+  --first-color-dark: #002060;
+  --text-color: #fff;
+  --text-color: rgb(0, 0, 0);
+  --first-color-light: #fff;
+  /*===== FONT AND TYPOGRAPHY =====*/
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.12rem;
+  --h2-font-size: 1rem;
+  /*===== MARGENES =====*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  /*===== Z INDEX =====*/
+  --z-fixed: 100;
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
