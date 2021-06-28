@@ -1,7 +1,9 @@
+import MarketPage from './components/pages/MarketPage';
+
 function App() {
   return (
     <div className='App'>
-      <h1>hello</h1>
+      <MarketPage />
     </div>
   );
 }
