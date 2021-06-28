@@ -46,11 +46,12 @@ function Client() {
           <li>Programmation & Tech</li>
           <li>Data</li>
           <li>Business</li>
-          <li>Loisir</li>
+          <li>Loisirs</li>
         </div>
         <hr></hr>
         <div className='title2'>
           <h1>Popular professional services</h1>
+          <button className='btn-chance'>Give a chance to new Freelancers</button>
         </div>
         <div className='logo2'>
           <img src={erlogo} alt='1erlogo' />
