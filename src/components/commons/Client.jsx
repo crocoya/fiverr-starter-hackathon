@@ -1,10 +1,10 @@
 import React from 'react';
 
-import erlogo from '../images/1logo.png';
-import deuxlogo from '../images/2logo.png';
-import troislogo from '../images/3logo.png';
-import quatrelogo from '../images/4logo.png';
-import cinqlogo from '../images/5logo.png';
+import erlogo from '../../images/1logo.png';
+import deuxlogo from '../../images/2logo.png';
+import troislogo from '../../images/3logo.png';
+import quatrelogo from '../../images/4logo.png';
+import cinqlogo from '../../images/5logo.png';
 import './Client.css';
 import Search from './Search';
 
@@ -51,7 +51,7 @@ function Client() {
         <hr></hr>
         <div className='title2'>
           <h1>Popular professional services</h1>
-          <button className='btn-chance'>Give a chance to new Freelancers</button>
+          <button className='btn-chance'>{/*lien vers page 1 du jeu */} Give a chance to new Freelancers</button> 
         </div>
         <div className='logo2'>
           <img src={erlogo} alt='1erlogo' />

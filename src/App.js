@@ -1,4 +1,4 @@
-import Client from './component/Client';
+import Client from './components/commons/Client';
 
 function App() {
   return (
