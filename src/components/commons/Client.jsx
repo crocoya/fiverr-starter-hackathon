@@ -15,7 +15,7 @@ function Client() {
         <p>
           Bienvenue sur Fiverr ! Souhaitez-vous découvrir Fiverr en français ?
         </p>
-        <span className='discover-link'>C'est parti !</span>
+        <span className='discover-link'> &nbsp; C'est parti !</span>
       </div>
       <header>
         <div className='logo'>

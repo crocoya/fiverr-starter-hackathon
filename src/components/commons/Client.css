@@ -70,6 +70,10 @@ li {
   display: -ms-flexbox;
   display: flex;
 }
+.links {
+  font-weight: bold;
+  color: black;
+}
 
 .ulLine2 {
   display: flex;
