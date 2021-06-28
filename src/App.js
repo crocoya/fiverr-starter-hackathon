@@ -1,3 +1,5 @@
+import Client from './component/Client';
+
 function App() {
   return (
     <div className='App'>
