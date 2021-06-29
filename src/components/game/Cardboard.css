@@ -47,6 +47,10 @@
   transition: 0.2s ease-in-out 0s;
 }
 
+.btn-action button:disabled {
+  background-color: #5e7c6e;
+}
+
 .score-card {
   display: flex;
   position: absolute;
