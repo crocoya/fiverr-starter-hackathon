@@ -38,8 +38,7 @@ export default function GamePage() {
                 <ol className='breadcrumb'>
                   <li className='breadcrumb-item'>
                     <span className='.breadcrumb-title'>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut, veniam.
+                      Donnez une petite chance à nos petits nouveaux freelances
                     </span>
                   </li>
                 </ol>

@@ -1,0 +1,23 @@
+.content-dashboard {
+  max-width: 1280px;
+  margin: 2rem auto 0 auto;
+}
+.content-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.body-sub-p {
+  font-weight: 300;
+}
+
+.content-filter {
+  margin-top: 2rem;
+  display: flex;
+  border-bottom: 1px solid grey;
+}
