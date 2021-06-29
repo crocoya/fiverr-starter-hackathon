@@ -16,9 +16,6 @@ export default function MainRouter() {
           <Route exact path='/marketplace-freelances' component={MarketPage} />
         </Switch>
         <Switch>
-          <Route exact path='/marketplace-clients' component={Client} />
-        </Switch>
-        <Switch>
           <Route exact path='/game' component={GamePage} />
         </Switch>
       </Router>

@@ -1,16 +1,19 @@
-import React from 'react'
-import './Search.css'
+import React from 'react';
 
 function Search() {
   return (
-    <div className="search-bar-package">
+    <div className='search-bar-package'>
       <form>
-        <span className="span-form"></span>
-        <input type="search" autocomplete="off" placeholder="Find Services"></input>
+        <span className='span-form'></span>
+        <input
+          type='search'
+          autocomplete='off'
+          placeholder='Find Services'
+        ></input>
         <button>Search</button>
       </form>
     </div>
-  )
+  );
 }
 
-export default Search
+export default Search;

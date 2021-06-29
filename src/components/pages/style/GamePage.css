@@ -3,9 +3,11 @@
   margin: 5rem auto 0 auto;
   padding-bottom: 1rem;
   background-color: crimson;
+  transition: all 0.5s ease;
 }
 
 .content:hover {
+  transition: all 0.5s ease;
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 0px 10px 5px crimson;
 }
@@ -62,4 +64,5 @@
 .global-activity .container-game {
   display: flex;
   flex-direction: column;
+  height: 35rem;
 }

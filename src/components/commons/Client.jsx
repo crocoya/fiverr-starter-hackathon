@@ -5,29 +5,28 @@ import deuxlogo from '../../assets/images/images/2logo.png';
 import troislogo from '../../assets/images/images/3logo.png';
 import quatrelogo from '../../assets/images/images/4logo.png';
 import cinqlogo from '../../assets/images/images/5logo.png';
-import './Client.css';
 import Search from './Search';
 
 function Client() {
   return (
-    <div className="layout-service .discover-fiverr">
-      <div className="intro">
+    <div className='layout-service .discover-fiverr'>
+      <div className='intro'>
         <p>
           Bienvenue sur Fiverr ! Souhaitez-vous découvrir Fiverr en français ?
         </p>
-        <span className="discover-link"> &nbsp; C'est parti !</span>
+        <span className='discover-link'> &nbsp; C'est parti !</span>
       </div>
       <header>
-        <div className="logo">
-          <i className="bx bxs-drink" />
-          <a href="/">
-            fiverr<span className="dot">.</span>
+        <div className='logo'>
+          <i className='bx bxs-drink' />
+          <a href='/'>
+            fiverr<span className='dot'>.</span>
           </a>
         </div>
-        <div className="search">
+        <div className='search'>
           <Search />
         </div>
-        <div className="links">
+        <div className='links'>
           <ul>
             <li>Fiverr Business</li>
             <li>Explore</li>
@@ -37,7 +36,7 @@ function Client() {
         </div>
       </header>
       <body>
-        <div className="ulLine2">
+        <div className='ulLine2'>
           <li>Graphism & Design</li>
           <li>Marketing digital</li>
           <li>Rédaction & Traduction</li>
@@ -49,18 +48,18 @@ function Client() {
           <li>Loisirs</li>
         </div>
         <hr></hr>
-        <div className="title2">
+        <div className='title2'>
           <h1>Popular professional services</h1>
-          <button className="btn-chance">
+          <button className='btn-chance'>
             {/*lien vers page 1 du jeu */} Give a chance to new Freelancers
           </button>
         </div>
-        <div className="logo2">
-          <img src={erlogo} alt="1erlogo" />
-          <img src={deuxlogo} alt="2logo" />
-          <img src={troislogo} alt="3logo" />
-          <img src={quatrelogo} alt="4logo" />
-          <img src={cinqlogo} alt="5logo" />
+        <div className='logo2'>
+          <img src={erlogo} alt='1erlogo' />
+          <img src={deuxlogo} alt='2logo' />
+          <img src={troislogo} alt='3logo' />
+          <img src={quatrelogo} alt='4logo' />
+          <img src={cinqlogo} alt='5logo' />
         </div>
       </body>
     </div>
