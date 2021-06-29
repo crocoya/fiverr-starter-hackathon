@@ -1,0 +1,28 @@
+.instruction {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 0 75px;
+  text-align: center;
+}
+
+.instruction p {
+  margin-bottom: 24px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.instruction button {
+  font-size: 32px;
+  margin-top: 50px;
+  padding: 12px 24px;
+  background-color: #1dbf73;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.instruction button:hover {
+  transform: scale(1.1);
+}
