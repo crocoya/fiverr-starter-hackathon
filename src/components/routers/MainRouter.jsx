@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
 import GamePage from '../pages/GamePage';
 import MarketPage from '../pages/MarketPage';
 import Client from '../commons/Client';
@@ -8,6 +9,9 @@ export default function MainRouter() {
   return (
     <>
       <Router>
+        <Switch>
+          <Route exact path='/' component={HomePage} />
+        </Switch>
         <Switch>
           <Route exact path='/marketplace-freelances' component={MarketPage} />
         </Switch>

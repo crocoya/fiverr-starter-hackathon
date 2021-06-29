@@ -1,7 +1,6 @@
 import React from 'react';
 import CardItem from '../commons/CardItem';
 import { Link } from 'react-router-dom';
-import Presentation from '../commons/Presentation';
 import './style/MarketPage.css';
 
 export default function MarketPage() {
@@ -23,7 +22,6 @@ export default function MarketPage() {
           </ul>
         </div>
       </header>
-      <Presentation />
       <main>
         <div className='container-search'>
           <div className='content-search'>
