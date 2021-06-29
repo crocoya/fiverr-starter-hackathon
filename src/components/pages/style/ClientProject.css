@@ -43,6 +43,86 @@
   transform-origin: 50%;
   animation: bounce 500ms alternate infinite ease;
 }
+
+.freelanceFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  width: 300px;
+  margin-bottom: -1px;
+  border: 1px solid rgb(211 211 211);
+  margin: 1.4rem;
+}
+
+.nav-item img {
+  width: 100%;
+}
+
+.nav-item:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 0px 10px 5px crimson;
+}
+
+.nav-item .nav-content {
+  text-align: center;
+  color: #454545;
+  padding: 50px 0 10px;
+}
+
+.nav-item .nav-content p {
+  margin-top: 20px;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.nav-item .nav-content span {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+.nav-item .nav-content .content-note {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.nav-item .nav-content .content-note span {
+  color: #ffbe5b;
+  font-weight: 700;
+}
+
+.nav-item .nav-content .content-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid rgb(211 211 211);
+
+  margin-top: 50px;
+}
+
+.buttonContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContainer button {
+  padding: 10px;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
 @keyframes bounce {
   0% {
     top: 30px;
