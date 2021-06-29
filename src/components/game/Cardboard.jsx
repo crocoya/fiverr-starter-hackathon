@@ -47,23 +47,34 @@ function Cardboard() {
       ></Card>
     ))
   ) : (
-    <p>Draw a card to start !</p>
+    <p>Draw a card to start!</p>
   );
 
   return (
     <>
-      <div className="cardboard">{!finished ? board : 'finished'}</div>
+      <div className='cardboard'>
+        {!finished ? (
+          board
+        ) : (
+          <>
+            <p className='text-end'>Finish! :(</p>
+          </>
+        )}
+      </div>
       {!finished ? (
-        <div>
-          <button onClick={getCard} disabled={score > max || finished}>
-            Get a new card
-          </button>
-          <button onClick={() => setFinished(true)}>
-            End game with this score !
-          </button>
-
-          <div>Your score : </div>
-          <Score value={score} />
+        <div className='score-section'>
+          <div className='btn-action'>
+            <button onClick={getCard} disabled={score > max || finished}>
+              Get a new card
+            </button>
+            <button onClick={() => setFinished(true)}>
+              End game with this score !
+            </button>
+          </div>
+          <div className='score-card'>
+            <p>Your score : </p>
+            <Score value={score} />
+          </div>
         </div>
       ) : null}
     </>

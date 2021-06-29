@@ -6,9 +6,9 @@ function Game() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="Game">
+    <div className='Game'>
       {!isPlaying ? (
-        <div>
+        <div className='instruction'>
           <p>
             This is a short game to help you to find projects as a new freelance
             on Fiverr : The most points you got, the more likely you are to get
@@ -19,7 +19,7 @@ function Game() {
             score, or to continue drawing cards. But be careful, if you go over
             12, you loose.
           </p>
-          <button onClick={() => setIsPlaying(true)}>Start the game !</button>
+          <button onClick={() => setIsPlaying(true)}>Start the game!</button>
         </div>
       ) : (
         <Cardboard />
