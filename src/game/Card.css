@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 2s ease-in-out;
+  transition: 1s ease-in-out;
   backface-visibility: hidden;
   transform: perspective(500px) rotateY(0);
   font-size: 48px;
@@ -54,12 +54,12 @@
 
 .toMove {
   transform: translateX(100vw);
-  transition: translate 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .moved {
   transform: translateX(0);
-  transition: translate 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .turnedFix {

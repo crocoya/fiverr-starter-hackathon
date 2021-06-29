@@ -1,4 +1,6 @@
 import Card from './Card';
+
+import Score from './Score';
 import { useState, useEffect } from 'react';
 import './Cardboard.css';
 
@@ -13,25 +15,29 @@ function Cardboard() {
   const [cards, setCards] = useState([]);
   const max = 12;
 
-  const getCard = (isNew) => {
+  const getCard = () => {
     const index = Math.floor(Math.random() * (cardsNumbers.length + 1));
     const value = cardsNumbers[index];
+    setScore(score + value);
 
     const tempCardsValue = [...cardsNumbers];
     tempCardsValue.splice(index, 1);
-    setScore(score + value);
 
     const tempCardsArray = [...cards];
     tempCardsArray.push({ value });
     setCards(tempCardsArray);
+
+    setTimeout(() => {
+      console.log('zefe');
+      if (score > max) {
+        setFinished(true);
+      }
+    }, 2500);
   };
 
   useEffect(() => {
-    getCard(true);
-    if (score > max) {
-      setFinished(true);
-    }
-  }, []);
+    // getCard(true);
+  }, [cardsNumbers]);
 
   const board = cards.map((elm, index) => (
     <Card
@@ -52,7 +58,9 @@ function Cardboard() {
           <button onClick={() => setFinished(true)}>
             End game with this score !
           </button>
-          <div>Your score : {score}</div>
+
+          <div>Your score : </div>
+          <Score value={score} />
         </div>
       ) : null}
     </>

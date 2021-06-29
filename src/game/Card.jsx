@@ -9,7 +9,10 @@ function Card({ number, toMove }) {
 
   useEffect(() => {
     if (move) {
-      setTimeout(() => setMoved(false), 1000);
+      setTimeout(() => {
+        setMoved(false);
+        setTimeout(() => turnCard(), 1000);
+      }, 100);
     }
   }, []);
 
