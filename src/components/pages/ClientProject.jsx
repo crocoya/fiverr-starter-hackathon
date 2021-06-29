@@ -59,39 +59,47 @@ export default function ClientProject() {
           </div>
         </div>
       ) : (
-        <div className="freelanceFound">
-          <div>We found a freelance for you !</div>
-          <div className="nav-item">
-            <img
-              src="https://fiverr-res.cloudinary.com/t_gig_cards_web_x2,q_auto,f_auto/gigs/171770678/original/d8c950e18b81ed00b8dea152dba7fcc5f8f062be.jpg"
-              alt=""
-            />
-            <div className="nav-content">
-              <p>
-                I will build modern wordpress website and ecommerce online store
-              </p>
-              <div className="content-note">
-                <span>
-                  <i className="bx bxs-star" />
-                  &nbsp;5.0
-                </span>
-                &nbsp; (617)
-              </div>
-              <div className="content-price">
-                <span>
-                  <i className="bx bxs-heart" />
-                </span>
-                <span>
-                  <em>STARTING AT $170.00</em>
-                </span>
-              </div>
+        <div className='freelanceFound'>
+          <div className='content-btn'>
+            <p>We found a freelance for you !</p>
+            <div className='buttonContainer'>
+              <button className='green'>
+                Give a chance to this freelance !
+              </button>
+              <button className='red' onClick={() => setFreelanceFound(false)}>
+                I'd like to try with someone else
+              </button>
             </div>
           </div>
-          <div className="buttonContainer">
-            <button className="green">Give a chance to this freelance !</button>
-            <button className="red" onClick={() => setFreelanceFound(false)}>
-              I'd like to try with someone else
-            </button>
+
+          <div className='content-card'>
+            <div className='nav-item'>
+              <img
+                src='https://fiverr-res.cloudinary.com/t_gig_cards_web_x2,q_auto,f_auto/gigs/171770678/original/d8c950e18b81ed00b8dea152dba7fcc5f8f062be.jpg'
+                alt=''
+              />
+              <div className='nav-content'>
+                <p>
+                  I will build modern wordpress website and ecommerce online
+                  store
+                </p>
+                <div className='content-note'>
+                  <span>
+                    <i className='bx bxs-star' />
+                    &nbsp;5.0
+                  </span>
+                  &nbsp; (617)
+                </div>
+                <div className='content-price'>
+                  <span>
+                    <i className='bx bxs-heart' />
+                  </span>
+                  <span>
+                    <em>STARTING AT $170.00</em>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
