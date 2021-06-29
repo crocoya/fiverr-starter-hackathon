@@ -35,13 +35,13 @@ export default function GamePage() {
           <div className='content-body'>
             <div className='container'>
               <div className='page-title'>
-                <ol className='breadcrumb'>
-                  <li className='breadcrumb-item'>
-                    <span className='.breadcrumb-title'>
-                      Donnez une petite chance à nos petits nouveaux freelances
-                    </span>
-                  </li>
-                </ol>
+                {/* <ol className='breadcrumb'>
+                  <li className='breadcrumb-item'> */}
+                {/* <span className='.breadcrumb-title'>
+                  Donnez une petite chance à nos petits nouveaux freelances
+                </span> */}
+                {/* </li>
+                </ol> */}
               </div>
               <div className='global-activity'>
                 <div className='container-game'>

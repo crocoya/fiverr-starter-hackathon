@@ -11,7 +11,7 @@ function Score({ value }) {
       clearTimeout(timer1);
     };
   });
-  return <div className="Score">{score}</div>;
+  return <p className='Score'>{score}</p>;
 }
 
 export default Score;
