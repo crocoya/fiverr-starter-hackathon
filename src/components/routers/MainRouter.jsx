@@ -11,14 +11,12 @@ export default function MainRouter() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-
-          <Route exact path="/marketplace-freelances" component={MarketPage} />
-
-          <Route exact path="/dashboard-freelances" component={DashboardPro} />
-          <Route exact path="/clientProject" component={ClientProject} />
-          <Route exact path="/marketplace-clients" component={Client} />
-          <Route exact path="/game" component={GamePage} />
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/marketplace-freelances' component={MarketPage} />
+          <Route exact path='/dashboard-freelances' component={DashboardPro} />
+          <Route exact path='/clientProject' component={ClientProject} />
+          <Route exact path='/marketplace-clients' component={Client} />
+          <Route exact path='/game' component={GamePage} />
         </Switch>
       </Router>
     </>

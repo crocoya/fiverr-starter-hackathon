@@ -13,7 +13,7 @@
 .container-horizontal {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -38,4 +38,22 @@
 
 .three {
   background-color: cadetblue;
+}
+
+input {
+  width: 30rem;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.container-s.input {
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container-s a .btn-recherche {
+  border-radius: 0% 10% 10% 0%;
 }
