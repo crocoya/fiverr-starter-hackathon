@@ -1,0 +1,42 @@
+.sidebar-left {
+  padding-bottom: 112px;
+  height: 100%;
+  position: fixed;
+  top: 5.3rem;
+  padding-top: 0;
+  z-index: 99;
+  box-shadow: 0 0 10px hsl(210deg 8% 51% / 13%);
+  transition: all 0.2s ease;
+  width: 12.375rem;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.sidebar-right {
+  padding-bottom: 112px;
+  height: 100%;
+  position: fixed;
+  top: 5.3rem;
+  padding-top: 0;
+  z-index: 99;
+  box-shadow: 0 0 10px hsl(210deg 8% 51% / 13%);
+  transition: all 0.2s ease;
+  width: 12rem;
+  left: 90%;
+  background-color: #f5f5f5;
+}
+
+.sidebar-bottom {
+  padding-bottom: 112px;
+  height: 170%;
+  position: fixed;
+  top: 3.7rem;
+  padding-top: 0;
+  z-index: 99;
+  box-shadow: 0 0 10px hsl(210deg 8% 51% / 13%);
+  transition: all 0.2s ease;
+  width: 12rem;
+  left: 45%;
+  background-color: #f5f5f5;
+  transform: rotate(-90deg);
+}
