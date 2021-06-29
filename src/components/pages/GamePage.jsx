@@ -37,7 +37,8 @@ export default function GamePage() {
                 <ol className='breadcrumb'>
                   <li className='breadcrumb-item'>
                     <span className='.breadcrumb-title'>
-                      Venez vous shooter gratuitement
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ut, veniam.
                     </span>
                   </li>
                 </ol>
