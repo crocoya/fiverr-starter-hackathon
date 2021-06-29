@@ -2,6 +2,7 @@ import React from 'react';
 import './style/CardItem.css';
 
 export default function CardItem() {
+
   return (
     <>
       <div className='global-activity card'>

@@ -1,0 +1,23 @@
+
+.span-form {
+  width:16px;
+  height:16px;
+}
+
+.search-bar-package form {
+  display: flex;
+  position: relative;
+  height: 34px;
+}
+
+form {
+display: flex;
+position: relative;
+height: 34px;
+color: #62646a;
+}
+
+button {
+  background-color: #1dbf73;
+  color: #fff;
+}
