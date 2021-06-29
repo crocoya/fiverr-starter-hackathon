@@ -82,3 +82,31 @@ main {
 .filter-btn p {
   margin-right: 16px;
 }
+
+.newcommerBanner {
+  width: 80%;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  background-color: rgb(245, 245, 207);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 1s;
+  padding: 50px;
+}
+
+.showBanner {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.bannerButtonContainer {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
