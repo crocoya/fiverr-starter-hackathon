@@ -1,5 +1,6 @@
 import React from 'react';
 import anime from 'animejs/lib/anime.es.js';
+import Game from '../game/Game';
 import './style/GamePage.css';
 
 export default function GamePage() {
@@ -45,39 +46,7 @@ export default function GamePage() {
               </div>
               <div className='global-activity'>
                 <div className='container-game'>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
-                  <span>HELLO</span>
+                  <Game />
                 </div>
               </div>
             </div>

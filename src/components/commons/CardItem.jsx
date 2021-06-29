@@ -2,10 +2,9 @@ import React from 'react';
 import './style/CardItem.css';
 
 export default function CardItem() {
-
   return (
     <>
-      <div className='global-activity card'>
+      <div className='global-activity cards'>
         <div className='nav card-list'>
           <div className='nav-item'>
             <img

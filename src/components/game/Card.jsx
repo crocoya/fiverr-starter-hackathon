@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Card.css';
-import FiverrLogo from '../assets/images/fiverrLogo.png';
+import FiverrLogo from '../../assets/images/fiverrLogo.png';
 
 function Card({ number, toMove }) {
   const [turnIt, setTurnIt] = useState(false);
@@ -30,7 +30,7 @@ function Card({ number, toMove }) {
     <div className={`card ${move ? 'toMove' : 'moved'}`}>
       <div className={`face front ${turnIt ? 'turned' : ''}`}>{number}</div>
       <div className={`face back ${turnIt ? 'turned' : ''}`} onClick={turnCard}>
-        <img className="cardBackLogo" src={FiverrLogo} alt="fiverrLogo" />
+        <img className='cardBackLogo' src={FiverrLogo} alt='fiverrLogo' />
       </div>
     </div>
   );
