@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import AfterGameProject from '../game/AfterGameProject';
+import axios from 'axios';
+
 import './style/AfterGame.css';
 function AfterGame() {
   const location = useLocation();
+  const history = useHistory();
   const [projectsToShow, setProjectsToShow] = useState([]);
   const [messageToDisplay, setMessageToDisplay] = useState(null);
   const [projectChoosed, setProjectChoosed] = useState(false);
@@ -82,6 +85,15 @@ function AfterGame() {
       );
     }
   }, []);
+
+  useEffect(() => {
+    if (projectChoosed) {
+      axios.get('http://localhost:4001/projectValidatedFromFreelance');
+      setTimeout(() => {
+        history.push('/dashboard-freelances');
+      }, 2000);
+    }
+  }, [projectChoosed]);
 
   return (
     <>
