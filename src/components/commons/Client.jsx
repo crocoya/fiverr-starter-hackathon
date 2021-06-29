@@ -5,6 +5,7 @@ import deuxlogo from '../../assets/images/images/2logo.png';
 import troislogo from '../../assets/images/images/3logo.png';
 import quatrelogo from '../../assets/images/images/4logo.png';
 import cinqlogo from '../../assets/images/images/5logo.png';
+import './Client.css';
 import Search from './Search';
 
 function Client() {
