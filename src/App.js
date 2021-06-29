@@ -1,10 +1,10 @@
-import Client from './components/commons/Client';
 
+import MainRouter from './components/routers/MainRouter';
 function App() {
   return (
-    <div className='App'>
-      <Client />
-    </div>
+    <MainRouter>
+      <div className='App'></div>
+    </MainRouter>
   );
 }
 
