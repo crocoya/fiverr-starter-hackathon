@@ -1,10 +1,11 @@
-import Game from './game/Game';
 
+
+import MainRouter from './components/routers/MainRouter';
 function App() {
   return (
-    <div className="App">
-      <Game />
-    </div>
+    <MainRouter>
+      <div className='App'></div>
+    </MainRouter>
   );
 }
 
