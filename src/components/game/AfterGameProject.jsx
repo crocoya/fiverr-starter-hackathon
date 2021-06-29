@@ -14,7 +14,6 @@ function AfterGameProject({
     <div
       className="projectContainer"
       onClick={() => {
-        console.log('oeoeoeoeo');
         if (id === 1) {
           click();
         }

@@ -56,7 +56,6 @@ function AfterGame() {
   ];
 
   useEffect(() => {
-    console.log('after game');
     const score = location.state.score;
     if (score > 10 && score < 13) {
       setProjectsToShow(projects);
@@ -91,7 +90,7 @@ function AfterGame() {
       axios.get('http://localhost:4001/projectValidatedFromFreelance');
       setTimeout(() => {
         history.push('/dashboard-freelances');
-      }, 2000);
+      }, 4000);
     }
   }, [projectChoosed]);
 
@@ -115,7 +114,7 @@ function AfterGame() {
       </header>
       <main>
         <div className="container-aftergame">
-          {!projectsToShow ? <p>{messageToDisplay}</p> : null}
+          {!projectChoosed ? <p>{messageToDisplay}</p> : null}
           <div className="projectsContainer">
             {!projectChoosed ? (
               projectsToShow.map((project) => (
@@ -132,8 +131,8 @@ function AfterGame() {
               ))
             ) : (
               <p>
-                Thanks to choose this project ! You will be in touch with the
-                client soon !
+                Thanks to have choosen this project ! You will be in touch with
+                the client soon !
               </p>
             )}
           </div>

@@ -10,7 +10,6 @@ export default function ClientProject() {
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
     socket.on('projectValidatedFromFreelance', (data) => {
-      console.log('freelance', data);
       setFreelanceFound(true);
     });
 
@@ -19,6 +18,14 @@ export default function ClientProject() {
 
   const lookForFreelance = () => {
     axios.get('http://localhost:4001/lookForFreelance');
+  };
+
+  const acceptFreelance = () => {
+    axios.get('http://localhost:4001/projectValidatedFromClient');
+  };
+
+  const refuseFreelance = () => {
+    axios.get('http://localhost:4001/projectRefusedFromClient');
   };
 
   return (
@@ -59,10 +66,16 @@ export default function ClientProject() {
           <div className="content-btn">
             <p>We found a freelance for you !</p>
             <div className="buttonContainer">
-              <button className="green">
+              <button className="green" onClick={acceptFreelance}>
                 Give a chance to this freelance !
               </button>
-              <button className="red" onClick={() => setFreelanceFound(false)}>
+              <button
+                className="red"
+                onClick={() => {
+                  setFreelanceFound(false);
+                  refuseFreelance();
+                }}
+              >
                 I'd like to try with someone else
               </button>
             </div>

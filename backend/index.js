@@ -16,25 +16,21 @@ const io = socketIo(server, {
 app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001'] }));
 
 app.get('/lookForFreelance', (req, res) => {
-  console.log('lookforfreelance');
   io.emit('lookForFreelance');
   res.sendStatus(200);
 });
 
 app.get('/projectValidatedFromFreelance', (req, res) => {
-  console.log('projectValidatedFromFreelance');
   io.emit('projectValidatedFromFreelance');
   res.sendStatus(200);
 });
 
 app.get('/projectValidatedFromClient', (req, res) => {
-  console.log('projectValidatedFromClient');
   io.emit('projectValidatedFromClient');
   res.sendStatus(200);
 });
 
 app.get('/projectRefusedFromClient', (req, res) => {
-  console.log('projectRefusedFromClient');
   io.emit('projectRefusedFromClient');
   res.sendStatus(200);
 });

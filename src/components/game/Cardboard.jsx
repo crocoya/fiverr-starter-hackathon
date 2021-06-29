@@ -39,7 +39,6 @@ function Cardboard() {
   });
 
   const finishGame = () => {
-    console.log('erkjgregjkb');
     history.push({ pathname: '/afterGame', state: { score: score } });
   };
 

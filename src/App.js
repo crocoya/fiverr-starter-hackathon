@@ -1,11 +1,15 @@
-
-
 import MainRouter from './components/routers/MainRouter';
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   return (
-    <MainRouter>
-      <div className='App'></div>
-    </MainRouter>
+    <>
+      <ToastContainer />
+
+      <MainRouter>
+        <div className="App"></div>
+      </MainRouter>
+    </>
   );
 }
 
