@@ -1,10 +1,11 @@
 import Card from './Card';
-
+import { useHistory } from 'react-router-dom';
 import Score from './Score';
 import { useState, useEffect } from 'react';
 import './Cardboard.css';
 
 function Cardboard() {
+  const history = useHistory();
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [cardsNumbers, setCardsNumbers] = useState([
@@ -32,10 +33,14 @@ function Cardboard() {
     if (score >= max) {
       setTimeout(() => {
         setScore(0);
-        setFinished(true);
+        finishGame();
       }, 3000);
     }
   });
+
+  const finishGame = () => {
+    history.push({ pathname: '/afterGame', state: { score: score } });
+  };
 
   const board = cards.length ? (
     cards.map((elm, index) => (
@@ -68,10 +73,7 @@ function Cardboard() {
             <button onClick={getCard} disabled={score > max || finished}>
               Get a new card
             </button>
-            <button
-              disabled={score > max || finished}
-              onClick={() => setFinished(true)}
-            >
+            <button disabled={score > max || finished} onClick={finishGame}>
               End game with this score !
             </button>
           </div>

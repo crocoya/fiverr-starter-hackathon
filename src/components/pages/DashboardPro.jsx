@@ -1,25 +1,61 @@
 import React, { useState, useEffect } from 'react';
-import ReactNotification from 'react-notifications-component';
-import socketIOClient from 'socket.io-client';
-import 'react-notifications-component/dist/theme.css';
 import { Link } from 'react-router-dom';
+import socketIOClient from 'socket.io-client';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './style/DashboardPro.css';
 const ENDPOINT = 'http://127.0.0.1:4001';
 
 export default function DashboardPro() {
-  const [notification, setNotification] = useState(false);
+  const [notif, setNotif] = useState(false);
 
   useEffect(() => {
     const socket = socketIOClient(ENDPOINT);
     socket.on('lookForFreelance', (data) => {
-      console.log('freelance ouais', data);
-      setNotification(true);
+      toast.info('New beginners projects available !', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setNotif(true);
+    });
+
+    socket.on('projectValidatedFromClient', (data) => {
+      toast.success('Beginner project has been accepted by the client !', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      setNotif(true);
+    });
+
+    socket.on('projectRefusedFromClient', (data) => {
+      toast.error(
+        'Beginner project has been refused by the client ... Try another one !',
+        {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        }
+      );
+      setNotif(true);
     });
   }, []);
 
   return (
     <>
-      {notification ? <ReactNotification /> : null}
       <header>
         <div className="logo">
           {/* <i className='bx bxs-drink' /> */}

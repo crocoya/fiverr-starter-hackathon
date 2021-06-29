@@ -6,6 +6,8 @@ import MarketPage from '../pages/MarketPage';
 import DashboardPro from '../pages/DashboardPro';
 import Client from '../commons/Client';
 import ClientProject from '../pages/ClientProject';
+import AfterGame from '../pages/AfterGame';
+
 export default function MainRouter() {
   return (
     <>
@@ -19,6 +21,8 @@ export default function MainRouter() {
           <Route exact path="/clientProject" component={ClientProject} />
           <Route exact path="/marketplace-clients" component={Client} />
           <Route exact path="/game" component={GamePage} />
+          <Route exact path="/afterGame" component={AfterGame} />
+          <Route exact path="/gamefinish" component={AfterGame} />
         </Switch>
       </Router>
     </>

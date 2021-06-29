@@ -44,7 +44,7 @@ main {
 }
 
 .btn-chance {
-  border: 3px solid crimson;
+  border: 3px solid rgb(29, 191, 115);
   background-color: transparent;
   border-radius: 1rem;
   color: black;
@@ -55,7 +55,7 @@ main {
 
 .btn-chance:hover {
   border: 3px solid #f7f5fb;
-  background-color: crimson;
+  background-color: rgb(29, 191, 115);
   color: #f7f5fb;
   transition: all 0.5s ease;
 }
