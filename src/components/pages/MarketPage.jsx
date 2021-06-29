@@ -1,5 +1,7 @@
 import React from 'react';
 import CardItem from '../commons/CardItem';
+import { Link } from 'react-router-dom';
+import Presentation from '../commons/Presentation';
 import './style/MarketPage.css';
 
 export default function MarketPage() {
@@ -21,25 +23,28 @@ export default function MarketPage() {
           </ul>
         </div>
       </header>
+      <Presentation />
       <main>
         <div className='container-search'>
           <div className='content-search'>
             <h2 className='result'>Results for "website"</h2>
-            <button className='btn-chance'>Get Chance to Get Project</button>
+            <Link to='/game'>
+              <button className='btn-chance'>Get Chance to Get Project</button>
+            </Link>
           </div>
           <div className='filter'>
             <div className='filter-cat'>
               <p>
-                Category<i class='bx bx-down-arrow-alt'></i>
+                Category<i className='bx bx-down-arrow-alt'></i>
               </p>
               <p>
-                Seller Details<i class='bx bx-down-arrow-alt'></i>
+                Seller Details<i className='bx bx-down-arrow-alt'></i>
               </p>
               <p>
-                Budget<i class='bx bx-down-arrow-alt'></i>
+                Budget<i className='bx bx-down-arrow-alt'></i>
               </p>
               <p>
-                Delivery Time<i class='bx bx-down-arrow-alt'></i>
+                Delivery Time<i className='bx bx-down-arrow-alt'></i>
               </p>
             </div>
             <div className='filter-btn'>

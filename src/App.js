@@ -1,10 +1,9 @@
-import MarketPage from './components/pages/MarketPage';
-
+import MainRouter from './components/routers/MainRouter';
 function App() {
   return (
-    <div className='App'>
-      <MarketPage />
-    </div>
+    <MainRouter>
+      <div className='App'></div>
+    </MainRouter>
   );
 }
 
