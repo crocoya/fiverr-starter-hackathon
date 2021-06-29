@@ -6,7 +6,7 @@ import MarketPage from '../pages/MarketPage';
 import DashboardPro from '../pages/DashboardPro';
 import Client from '../commons/Client';
 import ClientProject from '../pages/ClientProject';
-import AfterGame from '../../game/AfterGame';
+import AfterGame from '../pages/AfterGame';
 export default function MainRouter() {
   return (
     <>
