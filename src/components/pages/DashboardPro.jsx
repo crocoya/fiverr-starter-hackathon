@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactNotification from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css';
+import { Link } from 'react-router-dom';
 import './style/DashboardPro.css';
 
 export default function DashboardPro() {
@@ -41,9 +42,25 @@ export default function DashboardPro() {
                 <li>DRAFT</li>
                 <li>DENIED</li>
                 <li>PAUSED</li>
-                <li>
-                  <i class='bx bx-notification'></i>
-                </li>
+                <Link to='/game'>
+                  <li
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      color: '#1dbf73',
+                    }}
+                  >
+                    BEGINNER PROJECTS
+                    <i
+                      className='bx bx-notification'
+                      style={{
+                        fontSize: '2rem',
+                        color: '#1dbf73',
+                        marginLeft: '0.5rem',
+                      }}
+                    />
+                  </li>
+                </Link>
               </ul>
               <button className='btn-create-gig'>CREATE A NEW GIG</button>
             </div>
