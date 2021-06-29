@@ -2,7 +2,7 @@
   width: 200px;
   height: 300px;
   transform-style: preserve-3d;
-  margin-right: 30px;
+  margin-right: 50px;
   cursor: pointer;
 }
 
@@ -19,7 +19,7 @@
   transition: 1s ease-in-out;
   backface-visibility: hidden;
   transform: perspective(500px) rotateY(0);
-  font-size: 48px;
+  font-size: 104px;
   border: #1dbf73 8px solid;
   border-radius: 5px;
   background-color: white;
@@ -74,7 +74,7 @@
   align-items: center;
   backface-visibility: hidden;
   transform: perspective(500px) rotateY(0);
-  font-size: 48px;
+  font-size: 104px;
   border: #1dbf73 8px solid;
   border-radius: 5px;
   background-color: white;
