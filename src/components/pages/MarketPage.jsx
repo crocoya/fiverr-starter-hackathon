@@ -9,13 +9,13 @@ export default function MarketPage() {
   return (
     <>
       <header>
-        <div className="logo">
+        <div className='logo'>
           {/* <i className='bx bxs-drink' /> */}
-          <a href="/">
-            fiverr<span className="dot">.</span>
+          <a href='/'>
+            fiverr<span className='dot'>.</span>
           </a>
         </div>
-        <div className="links">
+        <div className='links'>
           <ul>
             <li>Fiverr Pro</li>
             <li>Explore</li>
@@ -25,11 +25,11 @@ export default function MarketPage() {
         </div>
       </header>
       <main>
-        <div className="container-search">
-          <div className="content-search">
-            <h2 className="result">Results for "website"</h2>
+        <div className='container-search'>
+          <div className='content-search'>
+            <h2 className='result'>Results for "website"</h2>
             <button
-              className="btn-chance"
+              className='btn-chance'
               onClick={() => setBannerDisplayed(true)}
             >
               Give a chance to a newcomer !
@@ -45,32 +45,32 @@ export default function MarketPage() {
               reputation ! To thanks you doing this effort, we offer you a 30$
               discount on the project.
             </p>
-            <div className="bannerButtonContainer">
-              <Link to="/clientProject">
-                <button>I try it !</button>
+            <div className='bannerButtonContainer'>
+              <Link className='try' to='/clientProject'>
+                I try it !
               </Link>
 
-              <button onClick={() => setBannerDisplayed(false)}>
+              <Link className='later' onClick={() => setBannerDisplayed(false)}>
                 Maybe later
-              </button>
+              </Link>
             </div>
           </div>
-          <div className="filter">
-            <div className="filter-cat">
+          <div className='filter'>
+            <div className='filter-cat'>
               <p>
-                Category<i className="bx bx-down-arrow-alt"></i>
+                Category<i className='bx bx-down-arrow-alt'></i>
               </p>
               <p>
-                Seller Details<i className="bx bx-down-arrow-alt"></i>
+                Seller Details<i className='bx bx-down-arrow-alt'></i>
               </p>
               <p>
-                Budget<i className="bx bx-down-arrow-alt"></i>
+                Budget<i className='bx bx-down-arrow-alt'></i>
               </p>
               <p>
-                Delivery Time<i className="bx bx-down-arrow-alt"></i>
+                Delivery Time<i className='bx bx-down-arrow-alt'></i>
               </p>
             </div>
-            <div className="filter-btn">
+            <div className='filter-btn'>
               <p>Pro Services</p>
               <p>Local Sellers</p>
               <p>Online Sellers</p>

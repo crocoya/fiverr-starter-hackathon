@@ -84,20 +84,39 @@ main {
 }
 
 .newcommerBanner {
-  width: 80%;
-  height: 200px;
+  width: 60%;
   position: absolute;
-  top: 20%;
-  background-color: rgb(245, 245, 207);
-  color: black;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fafafa;
+  color: #44554d;
+  border: 1px solid #1dbf73;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 3rem;
   align-items: center;
   opacity: 0;
   z-index: 1000;
   transition: opacity 1s;
   padding: 50px;
+  font-size: 20px;
+}
+
+.try {
+  padding: 12px 24px;
+  background-color: #1dbf73;
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+.later {
+  padding: 12px 24px;
+  background-color: #fafafa;
+  color: #1dbf73;
+  border: 1px solid #1dbf73;
+  border-radius: 5px;
 }
 
 .showBanner {
