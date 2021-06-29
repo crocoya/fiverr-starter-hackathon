@@ -28,7 +28,7 @@ function Cardboard() {
     setCards(tempCardsArray);
 
     setTimeout(() => {
-      if (score > max) {
+      if (score >= max) {
         setFinished(true);
       }
     }, 2500);
