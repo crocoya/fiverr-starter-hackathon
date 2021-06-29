@@ -26,17 +26,16 @@ function Cardboard() {
     const tempCardsArray = [...cards];
     tempCardsArray.push({ value });
     setCards(tempCardsArray);
-
-    setTimeout(() => {
-      if (score >= max) {
-        setFinished(true);
-      }
-    }, 2500);
   };
 
   useEffect(() => {
-    // getCard(true);
-  }, [cardsNumbers]);
+    if (score >= max) {
+      setTimeout(() => {
+        setScore(0);
+        setFinished(true);
+      }, 3000);
+    }
+  });
 
   const board = cards.length ? (
     cards.map((elm, index) => (
@@ -47,23 +46,39 @@ function Cardboard() {
       ></Card>
     ))
   ) : (
-    <p>Draw a card to start !</p>
+    <p>Draw a card to start!</p>
   );
 
   return (
     <>
-      <div className="cardboard">{!finished ? board : 'finished'}</div>
+      <div className="cardboard">
+        {!finished ? (
+          board
+        ) : (
+          <>
+            <p className="text-end">
+              The game is finished ! You got {score} points
+            </p>
+          </>
+        )}
+      </div>
       {!finished ? (
-        <div>
-          <button onClick={getCard} disabled={score > max || finished}>
-            Get a new card
-          </button>
-          <button onClick={() => setFinished(true)}>
-            End game with this score !
-          </button>
-
-          <div>Your score : </div>
-          <Score value={score} />
+        <div className="score-section">
+          <div className="btn-action">
+            <button onClick={getCard} disabled={score > max || finished}>
+              Get a new card
+            </button>
+            <button
+              disabled={score > max || finished}
+              onClick={() => setFinished(true)}
+            >
+              End game with this score !
+            </button>
+          </div>
+          <div className="score-card">
+            <p>Your score : </p>
+            <Score value={score} />
+          </div>
         </div>
       ) : null}
     </>

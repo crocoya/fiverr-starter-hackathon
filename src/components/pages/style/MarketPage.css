@@ -26,7 +26,7 @@ li {
 }
 
 main {
-  max-width: 1500px;
+  max-width: 1250px;
   margin: 0 auto;
 }
 
@@ -81,4 +81,51 @@ main {
 }
 .filter-btn p {
   margin-right: 16px;
+}
+
+.newcommerBanner {
+  width: 60%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fafafa;
+  color: #44554d;
+  border: 1px solid #1dbf73;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  opacity: 0;
+  z-index: 1000;
+  transition: opacity 1s;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.try {
+  padding: 12px 24px;
+  background-color: #1dbf73;
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+.later {
+  padding: 12px 24px;
+  background-color: #fafafa;
+  color: #1dbf73;
+  border: 1px solid #1dbf73;
+  border-radius: 5px;
+}
+
+.showBanner {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.bannerButtonContainer {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }

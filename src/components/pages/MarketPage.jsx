@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardItem from '../commons/CardItem';
 import { Link } from 'react-router-dom';
 import './style/MarketPage.css';
 
 export default function MarketPage() {
+  const [bannerDisplayed, setBannerDisplayed] = useState(false);
+
   return (
     <>
       <header>
@@ -26,9 +28,32 @@ export default function MarketPage() {
         <div className='container-search'>
           <div className='content-search'>
             <h2 className='result'>Results for "website"</h2>
-            <Link to='/game'>
-              <button className='btn-chance'>Get Chance to Get Project</button>
-            </Link>
+            <button
+              className='btn-chance'
+              onClick={() => setBannerDisplayed(true)}
+            >
+              Give a chance to a newcomer !
+            </button>
+          </div>
+          <div
+            className={`newcommerBanner ${bannerDisplayed ? 'showBanner' : ''}`}
+          >
+            <p>
+              Starting as a new freelance is never an easy thing, especially on
+              well known website like fiverr. By using this feature, you will
+              give your project to a newcomer, and help him to build a
+              reputation ! To thanks you doing this effort, we offer you a 30$
+              discount on the project.
+            </p>
+            <div className='bannerButtonContainer'>
+              <Link className='try' to='/clientProject'>
+                I try it !
+              </Link>
+
+              <Link className='later' onClick={() => setBannerDisplayed(false)}>
+                Maybe later
+              </Link>
+            </div>
           </div>
           <div className='filter'>
             <div className='filter-cat'>

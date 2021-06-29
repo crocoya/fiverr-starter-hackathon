@@ -14,7 +14,7 @@ function Card({ number, toMove }) {
         setTimeout(() => turnCard(), 1000);
       }, 100);
     }
-  }, []);
+  }, [move]);
 
   const turnCard = () => {
     setTurnIt(true);
