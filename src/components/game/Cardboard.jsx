@@ -5,10 +5,9 @@ import { useState, useEffect } from 'react';
 import './Cardboard.css';
 
 function Cardboard() {
-  const [isBack, setIsBack] = useState(true);
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
-  const [cardsNumbers, isCardsNumbers] = useState([
+  const [cardsNumbers, setCardsNumbers] = useState([
     1, 1, 2, 2, 3, 3, 4, 4, 5, 5,
   ]);
 
@@ -16,20 +15,20 @@ function Cardboard() {
   const max = 12;
 
   const getCard = () => {
-    const index = Math.floor(Math.random() * (cardsNumbers.length + 1));
+    const index = Math.floor(Math.random() * cardsNumbers.length);
     const value = cardsNumbers[index];
     setScore(score + value);
 
     const tempCardsValue = [...cardsNumbers];
     tempCardsValue.splice(index, 1);
+    setCardsNumbers(tempCardsValue);
 
     const tempCardsArray = [...cards];
     tempCardsArray.push({ value });
     setCards(tempCardsArray);
 
     setTimeout(() => {
-      console.log('zefe');
-      if (score > max) {
+      if (score >= max) {
         setFinished(true);
       }
     }, 2500);
@@ -39,13 +38,17 @@ function Cardboard() {
     // getCard(true);
   }, [cardsNumbers]);
 
-  const board = cards.map((elm, index) => (
-    <Card
-      number={elm.value}
-      toMove={index === cards.length - 1}
-      key={Math.floor(Math.random() * 1000)}
-    ></Card>
-  ));
+  const board = cards.length ? (
+    cards.map((elm, index) => (
+      <Card
+        number={elm.value}
+        toMove={index === cards.length - 1}
+        key={Math.floor(Math.random() * 1000)}
+      ></Card>
+    ))
+  ) : (
+    <p>Draw a card to start !</p>
+  );
 
   return (
     <>
