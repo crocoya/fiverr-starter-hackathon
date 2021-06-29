@@ -9,7 +9,6 @@ import AfterGame from '../../game/AfterGame';
 export default function MainRouter() {
   return (
     <>
-    <AfterGame />
       <Router>
         <Switch>
           <Route exact path='/' component={HomePage} />
@@ -22,6 +21,9 @@ export default function MainRouter() {
         </Switch>
         <Switch>
           <Route exact path='/game' component={GamePage} />
+        </Switch>
+        <Switch>
+          <Route exact path='/gamefinish' component={AfterGame} />
         </Switch>
       </Router>
     </>
