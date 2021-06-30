@@ -12,8 +12,9 @@ export default function ClientProject() {
     socket.on('projectValidatedFromFreelance', (data) => {
       setFreelanceFound(true);
     });
-
-    lookForFreelance();
+    setTimeout(() => {
+      lookForFreelance();
+    }, 2000);
   }, []);
 
   const lookForFreelance = () => {
@@ -21,11 +22,15 @@ export default function ClientProject() {
   };
 
   const acceptFreelance = () => {
-    axios.get('http://localhost:4001/projectValidatedFromClient');
+    setTimeout(() => {
+      axios.get('http://localhost:4001/projectValidatedFromClient');
+    }, 2000);
   };
 
   const refuseFreelance = () => {
-    axios.get('http://localhost:4001/projectRefusedFromClient');
+    setTimeout(() => {
+      axios.get('http://localhost:4001/projectRefusedFromClient');
+    }, 2000);
   };
 
   return (
