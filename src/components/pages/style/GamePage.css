@@ -60,11 +60,12 @@
   background-clip: border-box;
   border: 1px solid #1dbf73b0;
   border-radius: 0.25rem;
+  margin-top: 8rem;
 }
 
 .global-activity .container-game {
   display: flex;
   flex-direction: column;
-  height: 28rem;
+  height: 40rem;
   justify-content: center;
 }
