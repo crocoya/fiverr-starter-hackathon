@@ -81,13 +81,12 @@
 .nav-item .nav-content {
   text-align: center;
   color: #454545;
-  padding: 50px 0 10px;
+  padding-top: 10px;
 }
 
 .nav-item .nav-content p {
-  margin-top: 20px;
+  margin: 20px 0;
   font-size: 17px;
-  margin-bottom: 0;
 }
 
 .nav-item .nav-content span {
@@ -109,11 +108,9 @@
 
 .nav-item .nav-content .content-price {
   display: flex;
-  justify-content: space-between;
-  padding: 10px 10px 0 10px;
+  justify-content: space-around;
   border-top: 1px solid rgb(211 211 211);
-
-  margin-top: 50px;
+  /* margin-top: 55px; */
 }
 
 .buttonContainer button {

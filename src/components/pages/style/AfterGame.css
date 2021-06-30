@@ -3,13 +3,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 35rem;
+  /* height: 35rem; */
   width: 100%;
-  padding: 10% 3%;
+  /* padding: 10% 3%; */
 }
 
 .projectsContainer {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 4rem 1rem 4rem;
+  gap: 1.5rem;
+}
+
+.text-score {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 3rem 0;
 }

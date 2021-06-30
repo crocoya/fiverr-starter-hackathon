@@ -65,6 +65,6 @@
 .global-activity .container-game {
   display: flex;
   flex-direction: column;
-  height: 35rem;
+  height: 28rem;
   justify-content: center;
 }
