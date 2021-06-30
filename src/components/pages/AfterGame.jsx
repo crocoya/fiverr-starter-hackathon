@@ -101,7 +101,6 @@ function AfterGame() {
     if (projectChoosed) {
       setTimeout(() => {
         axios.get('http://localhost:4001/projectValidatedFromFreelance');
-
         history.push('/dashboard-freelances');
       }, 4000);
     }
