@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Card from './Card';
 import { useHistory } from 'react-router-dom';
 import Score from './Score';
@@ -56,20 +57,20 @@ function Cardboard() {
 
   return (
     <>
-      <div className="cardboard">
+      <div className='cardboard'>
         {!finished ? (
           board
         ) : (
           <>
-            <p className="text-end">
+            <p className='text-end'>
               The game is finished ! You got {score} points
             </p>
           </>
         )}
       </div>
       {!finished ? (
-        <div className="score-section">
-          <div className="btn-action">
+        <div className='score-section'>
+          <div className='btn-action'>
             <button onClick={getCard} disabled={score > max || finished}>
               Get a new card
             </button>
@@ -77,7 +78,7 @@ function Cardboard() {
               End game with this score !
             </button>
           </div>
-          <div className="score-card">
+          <div className='score-card'>
             <p>Your score : </p>
             <Score value={score} />
           </div>
