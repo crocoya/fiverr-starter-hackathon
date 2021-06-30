@@ -13,7 +13,7 @@
 .container-horizontal {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -29,13 +29,104 @@
 }
 
 .one {
-  background-color: crimson;
+  background: url(https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049977/bg-hero-5-1792-x2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-team {
+  position: absolute;
+  top: 30%;
+  right: 87%;
+  font-size: 5rem;
+  color: white;
+}
+
+.oneRef {
+  font-size: 3rem;
+  width: 50rem;
+  color: white;
+  position: absolute;
+  right: 85%;
+  text-align: center;
 }
 
 .two {
-  background-color: blueviolet;
+  background: url(https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/2413b8415dda9dbd7756d02cb87cd4b1-1599595203021/bg-hero-2-1792-x2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-one {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 45%;
+  top: 30%;
+}
+
+.text-two {
+  color: white;
+  font-size: 2.7rem;
+  position: absolute;
+  right: 43%;
+  top: 55%;
 }
 
 .three {
-  background-color: cadetblue;
+  background: url(https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049984/bg-hero-1-1792-x2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input {
+  width: 38rem;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.container-banner {
+  position: absolute;
+  top: 50%;
+  right: 18%;
+}
+
+.title-banner {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  top: -230%;
+  color: white;
+  width: 45rem;
+}
+
+.subtitle-banner {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  top: -125%;
+  color: white;
+  width: 45rem;
+}
+
+.title-banner i {
+  font-weight: 500;
+}
+
+.container-s.input {
+  font-size: 1.3rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.container-s a .btn-recherche {
+  border-radius: 0% 10% 10% 0%;
+}
+
+.container-s a .btn-recherche:hover {
+  color: crimson;
 }

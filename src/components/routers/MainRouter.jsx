@@ -25,6 +25,7 @@ export default function MainRouter() {
           <Route exact path="/game" component={GamePage} />
           <Route exact path="/afterGame" component={AfterGame} />
           <Route exact path="/gamefinish" component={AfterGame} />
+          <Route exact path="/" component={HomePage} />
         </Switch>
       </Router>
     </>
