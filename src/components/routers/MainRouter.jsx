@@ -7,6 +7,7 @@ import DashboardPro from '../pages/DashboardPro';
 import Client from '../commons/Client';
 import ClientProject from '../pages/ClientProject';
 import AfterGame from '../pages/AfterGame';
+import Thanks from '../pages/Thanks';
 
 export default function MainRouter() {
   return (
@@ -16,6 +17,7 @@ export default function MainRouter() {
           <Route exact path="/" component={HomePage} />
 
           <Route exact path="/marketplace-freelances" component={MarketPage} />
+          <Route exact path="/thanks" component={Thanks} />
 
           <Route exact path="/dashboard-freelances" component={DashboardPro} />
           <Route exact path="/clientProject" component={ClientProject} />

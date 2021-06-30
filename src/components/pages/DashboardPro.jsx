@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import socketIOClient from 'socket.io-client';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,6 +7,7 @@ import './style/DashboardPro.css';
 const ENDPOINT = 'http://127.0.0.1:4001';
 
 export default function DashboardPro() {
+  const history = useHistory();
   const [notif, setNotif] = useState(false);
 
   useEffect(() => {
@@ -35,6 +36,9 @@ export default function DashboardPro() {
         progress: undefined,
       });
       setNotif(true);
+      setTimeout(() => {
+        history.push('/thanks');
+      }, 2000);
     });
 
     socket.on('projectRefusedFromClient', (data) => {
