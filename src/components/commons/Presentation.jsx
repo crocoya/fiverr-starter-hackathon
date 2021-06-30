@@ -7,6 +7,15 @@ import './style/Presentation.css';
 export default function Presentation() {
   const textRef = React.useRef();
   const oneRef = React.useRef();
+  const titleRef = React.useRef();
+
+  React.useEffect(() => {
+    init(titleRef.current, {
+      showCursor: false,
+      backDelay: 1500,
+      strings: ['STARTER'],
+    });
+  }, []);
 
   React.useEffect(() => {
     init(oneRef.current, {
