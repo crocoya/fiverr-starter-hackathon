@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import Cardboard from './Cardboard';
 import './Game.css';
+import '../commons/Client.css';
 
 function Game() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className='Game'>
+    <div className="Game">
       {!isPlaying ? (
-        <div className='instruction'>
+        <div className="instruction">
           <p>
             This is a short game to help you to find projects as a new freelance
             on Fiverr : The most points you got, the more likely you are to get
