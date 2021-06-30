@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { init } from 'ityped';
 
 import './style/Presentation.css';
+import CarouselHome from './CarouselHome';
 
 export default function Presentation() {
   const textRef = React.useRef();
@@ -20,9 +21,7 @@ export default function Presentation() {
         <div className='slide one'>
           <span>Slide 1</span>
         </div>
-        <div className='slide two'>
-          <span>Slide 2</span>
-        </div>
+        <div className='slide two'></div>
         <div className='slide three'>
           <div className='container-banner'>
             <span className='title-banner'>
