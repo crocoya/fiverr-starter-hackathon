@@ -29,11 +29,37 @@
 }
 
 .one {
-  background-color: crimson;
+  background: url(https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049977/bg-hero-5-1792-x2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-team {
+  position: absolute;
+  top: 30%;
+  right: 87%;
+  font-size: 5rem;
+  color: white;
+}
+
+.oneRef {
+  font-size: 3rem;
+  width: 50rem;
+  color: white;
+  position: absolute;
+  right: 85%;
+  text-align: center;
 }
 
 .two {
-  background-color: blueviolet;
+  background: url(https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/2413b8415dda9dbd7756d02cb87cd4b1-1599595203021/bg-hero-2-1792-x2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-one {
+  color: white;
+  font-size: 4rem;
 }
 
 .three {

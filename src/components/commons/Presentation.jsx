@@ -3,10 +3,22 @@ import { Link } from 'react-router-dom';
 import { init } from 'ityped';
 
 import './style/Presentation.css';
-import CarouselHome from './CarouselHome';
 
 export default function Presentation() {
   const textRef = React.useRef();
+  const oneRef = React.useRef();
+
+  React.useEffect(() => {
+    init(oneRef.current, {
+      showCursor: false,
+      startDelay: 500,
+      typeSpeed: 40,
+      loop: false,
+      strings: [
+        'Offrons la possibilité aux nouveaux talents de prouver leur potentiel !',
+      ],
+    });
+  }, []);
 
   React.useEffect(() => {
     init(textRef.current, {
@@ -19,9 +31,19 @@ export default function Presentation() {
     <div className='container-slide'>
       <div className='container-horizontal'>
         <div className='slide one'>
-          <span>Slide 1</span>
+          <p className='title-team'>FIVERR STARTER</p>
+          <p ref={oneRef} className='oneRef'></p>
         </div>
-        <div className='slide two'></div>
+
+        <div className='slide two'>
+          <p className='text-one'>
+            Le client obtient une réduction pour son prochain contrat
+          </p>
+          <p className='text-one'>
+            Le freelance peut décrocher un projet malgré le manque de visibilité
+          </p>
+        </div>
+
         <div className='slide three'>
           <div className='container-banner'>
             <span className='title-banner'>
