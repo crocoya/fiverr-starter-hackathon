@@ -39,7 +39,7 @@ export default function Presentation() {
           <p className='text-one'>
             Le client obtient une réduction pour son prochain contrat
           </p>
-          <p className='text-one'>
+          <p className='text-two'>
             Le freelance peut décrocher un projet malgré le manque de visibilité
           </p>
         </div>
